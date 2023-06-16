@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'WhitneyHTF-Medium';
+    src: url('../fonts/WhitneyHTF-Medium.otf');
+}
+
+@font-face {
+    font-family: 'WhitneyHTF-Bold';
+    src: url('../fonts/WhitneyHTF-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Solano-Bold';
+    src: url('../fonts/SolanoGothicMVB-Bd.ttf');
+}
+
+:root {
+    --gray-80: #42526A;
+}
+
+html {
+    color: var(--gray-80);
+    font-family: 'WhitneyHTF-Medium';
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h3, p, ol {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(180deg, #F8FAFD 0%, rgba(248, 250, 253, 0.8) 100%);
+    backdrop-filter: blur(8px);
+    border-radius: 24px 24px 0px 0px;
+    color: black;
+    font-family: 'Solano-Bold';
+    font-size: 24px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-block-start: 70px;
+    padding-inline: 20px;
+    padding-block: 24px;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 24px;
+}
+
+.title {
+    font-family: 'WhitneyHTF-Bold';
+    margin-block-end: 4px;
+}
+
+.paragraphs-container ol li {
+    list-style: square;
+    margin-inline-start: 30px;
+}
+
+.bold {
+    font-family: 'WhitneyHTF-Bold';
+    font-size: 16px;
+}
